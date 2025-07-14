@@ -1,0 +1,30 @@
+<!-- Botão hamburguer -->
+<div class="topbar">
+  <button class="menu-toggle" (click)="toggleSidebar()">
+    <i class="fas fa-bars"></i>
+  </button>
+</div>
+
+<!-- Menu lateral flutuante -->
+<div class="minimal-sidebar" *ngIf="sidebarOpen">
+  <ul>
+    <li (click)="navigateToDashboard()">
+      <i class="fas fa-home"></i> <span>Dashboard</span>
+    </li>
+    <li (click)="logout()">
+      <i class="fas fa-sign-out-alt"></i> <span>Sair</span>
+    </li>
+  </ul>
+</div>
+
+
+<!-- Imagem de fundo -->
+<div class="bg-wrapper">
+  <img src="https://live.dealer-asset.co/images/br1001/product/paintSwatch/vehicle/ford-brasil-ranger-raptor-azul-belize-v2-271123.jpg?s=1024" alt="Ford Ranger">
+</div>
+
+<!-- Card central -->
+<div class="center-card">
+  <h2>Sistema de dados FORD</h2>
+  <p><a href="#">Seja bem-vindo(a)!</a></p>
+</div>

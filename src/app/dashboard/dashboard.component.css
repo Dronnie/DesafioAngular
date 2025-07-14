@@ -1,0 +1,134 @@
+/* Reset básico */
+:host {
+  display: block;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  position: relative;
+  background-color: #f4f4f4;
+}
+
+/* Topbar */
+.topbar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1001; /* aumentar para ficar acima da imagem */
+}
+
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #2c3e50;
+}
+
+.menu-toggle:hover {
+  color: #3c56e7;
+}
+
+/* Menu lateral flutuante */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #2c3e50;
+  transition: color 0.2s ease;
+}
+
+.menu-toggle:hover {
+  color: #007bff;
+}
+
+.minimal-sidebar {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 160px; /* reduzido de 180px */
+  padding: 8px 0;
+}
+
+.minimal-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.minimal-sidebar li {
+  padding: 10px 15px; /* reduzido */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 14px; /* levemente menor */
+  transition: background 0.2s;
+}
+
+.minimal-sidebar li:hover {
+  background-color: #f1f1f1;
+}
+
+.minimal-sidebar i {
+  margin-right: 8px; /* menor margem */
+  font-size: 16px;
+}
+
+.minimal-sidebar span {
+  flex-grow: 1;
+  white-space: nowrap;
+}
+
+
+
+/* Imagem de fundo */
+.bg-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.bg-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+/* Card central */
+.center-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 5;
+}
+
+.center-card h2 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.center-card p a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.center-card p a:hover {
+  text-decoration: underline;
+}
